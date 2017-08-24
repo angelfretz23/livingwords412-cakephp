@@ -1,0 +1,53 @@
+msgid "login_failed"
+msgstr "User doesn't exists in our database or banned by admin"
+
+msgid "email_exist"
+msgstr "This email is already used, please check another one"
+
+msgid "failed_check"
+msgstr "Attempt to make action on not appropriate data"
+
+msgid "following"
+msgstr "start following"
+
+msgid "unfollowing"
+msgstr "stop following"
+
+msgid "report_yourself"
+msgstr "You can not report yourself"
+
+msgid "exist"
+msgstr "Record already exist"
+
+msgid "no_activity"
+msgstr "You have no activity yet"
+
+msgid "new_video"
+msgstr "{0} added new video"
+
+msgid "liked"
+msgstr "{0} liked {1}'s video"
+
+msgid "follow"
+msgstr "{0} start following you"
+
+msgid "user_comment"
+msgstr "{0} has commented {1}'s video"
+
+msgid "reset_password"
+msgstr "Check your email"
+
+msgid "success_reset"
+msgstr "Your password has been changed"
+
+msgid "push_message_comment"
+msgstr "{0} added new comment"
+
+msgid "push_message_like"
+msgstr "{0} liked video"
+
+msgid "push_message_follow"
+msgstr "{0} start following {1}"
+
+msgid "unavailable_act"
+msgstr "unavailable action"

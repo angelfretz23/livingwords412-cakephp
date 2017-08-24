@@ -1,0 +1,323 @@
+2017-01-11 15:45:03 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'fb_id'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160504083842_AddSomeFieldsToUsers.php(49): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddSomeFieldsToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddSomeFieldsToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddSomeFieldsToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-01-11 15:48:12 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'tw_id'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160504083842_AddSomeFieldsToUsers.php(44): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddSomeFieldsToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddSomeFieldsToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddSomeFieldsToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-01-11 15:48:27 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'language'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160504083842_AddSomeFieldsToUsers.php(35): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddSomeFieldsToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddSomeFieldsToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddSomeFieldsToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-01-11 15:48:33 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'user_photo'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160504083842_AddSomeFieldsToUsers.php(30): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddSomeFieldsToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddSomeFieldsToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddSomeFieldsToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-01-11 15:48:41 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'udid'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160504083842_AddSomeFieldsToUsers.php(27): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddSomeFieldsToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddSomeFieldsToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddSomeFieldsToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-01-11 15:48:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'modified'
+Stack Trace:
+#0 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(338): PDO->exec('ALTER TABLE `us...')
+#1 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(408): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `us...')
+#2 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/CakeAdapter.php(481): Phinx\Db\Adapter\MysqlAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#3 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(630): Migrations\CakeAdapter->addColumn(Object(Migrations\Table), Object(Phinx\Db\Table\Column))
+#4 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Table.php(81): Phinx\Db\Table->update()
+#5 /home/vagrant/Code/sport_scouts/config/Migrations/20160506063758_AddDateToUsers.php(30): Migrations\Table->update()
+#6 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(120): AddDateToUsers->change()
+#7 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(AddDateToUsers), 'up')
+#8 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(AddDateToUsers), 'up')
+#9 /home/vagrant/Code/sport_scouts/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(113): Phinx\Migration\Manager->migrate('default', 20160702115102)
+#10 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Command/Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Command/Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /home/vagrant/Code/sport_scouts/vendor/symfony/console/Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#19 /home/vagrant/Code/sport_scouts/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 /home/vagrant/Code/sport_scouts/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 /home/vagrant/Code/sport_scouts/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
+2017-04-24 11:45:57 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.bible_book_vers' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'bible_book_vers', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('bible_book_vers', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('bible_book_vers')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'bible_book_vers', 'BibleBookVers')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('BibleBookVers')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('BibleBookVers')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-04-25 14:32:03 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.administrators' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'administrators', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('administrators', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('administrators')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'administrators', 'Administrators')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Administrators')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('Administrators')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-04-25 14:32:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.administrators' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'administrators', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('administrators', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('administrators')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'administrators', 'Administrators')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Administrators')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('Administrators')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-05-25 11:53:19 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.favorite' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'favorite', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('favorite', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('favorite')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'favorite', 'Favorite')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Favorite')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('Favorite')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-05-31 11:43:52 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.high_lights' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'high_lights', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('high_lights', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('high_lights')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'high_lights', 'HighLights')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('HighLights')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('HighLights')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-05-31 11:44:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ranch_db.high_lights' doesn't exist
+Stack Trace:
+#0 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'high_lights', Array, Object(Cake\Database\Schema\Table))
+#1 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('high_lights', Array)
+#2 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('high_lights')
+#3 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'high_lights', 'HighLights')
+#7 /home/vagrant/Code/dev/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('HighLights')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('HighLights')
+#9 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(473): call_user_func_array(Array, Array)
+#10 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/Shell.php(466): Cake\Console\Shell->runCommand(Array, false, Array)
+#11 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 /home/vagrant/Code/dev/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 /home/vagrant/Code/dev/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2017-06-20 09:24:02 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists
+Stack Trace:
+#0 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(338): PDO->exec('CREATE TABLE `u...')
+#1 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(305): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `u...')
+#2 C:\development\projects\bible_s\vendor\cakephp\migrations\src\CakeAdapter.php(423): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Migrations\Table))
+#3 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(611): Migrations\CakeAdapter->createTable(Object(Migrations\Table))
+#4 C:\development\projects\bible_s\vendor\cakephp\migrations\src\Table.php(69): Phinx\Db\Table->create()
+#5 C:\development\projects\bible_s\config\Migrations\20160427120940_CreateUsers.php(48): Migrations\Table->create()
+#6 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(120): CreateUsers->change()
+#7 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(327): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateUsers), 'up')
+#8 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(303): Phinx\Migration\Manager->executeMigration('default', Object(CreateUsers), 'up')
+#9 C:\development\projects\bible_s\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(113): Phinx\Migration\Manager->migrate('default', NULL)
+#10 C:\development\projects\bible_s\vendor\cakephp\migrations\src\ConfigurationTrait.php(165): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\development\projects\bible_s\vendor\cakephp\migrations\src\Command\Migrate.php(64): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\development\projects\bible_s\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\development\projects\bible_s\vendor\symfony\console\Application.php(830): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\development\projects\bible_s\vendor\symfony\console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\development\projects\bible_s\vendor\symfony\console\Application.php(122): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\development\projects\bible_s\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(101): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 [internal function]: Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#18 C:\development\projects\bible_s\vendor\cakephp\cakephp\src\Console\Shell.php(473): call_user_func_array(Array, Array)
+#19 C:\development\projects\bible_s\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(156): Cake\Console\Shell->runCommand(Array, true, Array)
+#20 C:\development\projects\bible_s\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Migrations\Shell\MigrationsShell->runCommand(Array, true, Array)
+#21 C:\development\projects\bible_s\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#22 C:\development\projects\bible_s\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#23 C:\development\projects\bible_s\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#24 {main}
+
+
